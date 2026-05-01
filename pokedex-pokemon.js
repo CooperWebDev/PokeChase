@@ -1,7 +1,7 @@
 const pokedexes = {
   pokedex: {
     title: "Normal Pokedex",
-    total: 904,
+    total: 906,
     data: [
       { name: "Bulbasaur", number: "0001", img: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/001.png", caught: false },
       { name: "Ivysaur", number: "0002", img: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/002.png", caught: false },
@@ -837,6 +837,8 @@ const pokedexes = {
   { name: "Mr. Rime", number: "0866", img: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/866.png", caught: false },
   { name: "Runerigus", number: "0867", img: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/867.png", caught: false },
   { name: "Falinks", number: "0870", img: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/870.png", caught: false },
+  { name: "Snom", number: "0872", img: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/872.png", caught: false },
+  { name: "Frosmoth", number: "0873", img: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/873.png", caught: false },
   { name: "Stonjourner", number: "0874", img: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/874.png", caught: false },
   { name: "Morpeko", number: "0877", img: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/877.png", caught: false },
   { name: "Dreepy", number: "0885", img: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/885.png", caught: false },
