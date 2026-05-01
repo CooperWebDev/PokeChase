@@ -619,8 +619,8 @@ const REGION_BREAKS_STANDARD = [
   { name: "Alola", index: 715 },
   { name: "Galar", index: 795 },
   { name: "Hisui", index: 848 },
-  { name: "Paldea", index: 854 },
-  { name: "Unidentified", index: 904 },
+  { name: "Paldea", index: 855 },
+  { name: "Unidentified", index: 905 },
 ];
 
 const REGION_BREAKS_SHINY = [
@@ -633,8 +633,8 @@ const REGION_BREAKS_SHINY = [
   { name: "Alola", index: 707 },
   { name: "Galar", index: 771 },
   { name: "Hisui", index: 788 },
-  { name: "Paldea", index: 793 },
-  { name: "Unidentified", index: 821 },
+  { name: "Paldea", index: 794 },
+  { name: "Unidentified", index: 822 },
 ];
 
 const REGION_BREAKS_PERFECTSHINY = [

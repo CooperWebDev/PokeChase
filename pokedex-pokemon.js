@@ -1,7 +1,7 @@
 const pokedexes = {
   pokedex: {
     title: "Normal Pokedex",
-    total: 906,
+    total: 907,
     data: [
       { name: "Bulbasaur", number: "0001", img: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/001.png", caught: false },
       { name: "Ivysaur", number: "0002", img: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/002.png", caught: false },
@@ -895,6 +895,7 @@ const pokedexes = {
 { name: "Bombirdier", number: "0962", img: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/962.png", caught: false },
 { name: "Varoom", number: "0965", img: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/965.png", caught: false },
 { name: "Revavroom", number: "0966", img: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/966.png", caught: false },
+{ name: "Orthworm", number: "0968", img: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/968.png", caught: false },
 { name: "Greavard", number: "0971", img: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/971.png", caught: false },
 { name: "Houndstone", number: "0972", img: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/972.png", caught: false },
 { name: "Cetoddle", number: "0974", img: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/974.png", caught: false },
@@ -913,7 +914,7 @@ const pokedexes = {
   },
   shiny: {
     title: "Shiny Pokedex",
-    total: 823,
+    total: 824,
     data: [
       { name: "Bulbasaur", number: "0001", img: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/001.png", caught: false },
       { name: "Ivysaur", number: "0002", img: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/002.png", caught: false },
@@ -1728,6 +1729,7 @@ const pokedexes = {
 { name: "Armarouge", number: "0936", img: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/936.png", caught: false },
 { name: "Ceruledge", number: "0937", img: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/937.png", caught: false },
 { name: "Bombirdier", number: "0962", img: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/962.png", caught: false },
+{ name: "Orthworm", number: "0968", img: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/968.png", caught: false },
 { name: "Cetoddle", number: "0974", img: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/974.png", caught: false },
 { name: "Cetitan", number: "0975", img: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/975.png", caught: false },
 { name: "Annihilape", number: "0979", img: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/979.png", caught: false },
