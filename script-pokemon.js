@@ -132,7 +132,7 @@ function goHome() {
           <a href="https://discord.gg/h3uBBhu8Cr" target="_blank" class="social-button discord">
             <i class="fab fa-discord"></i>
           </a>
-          <a href="https://median.co/share/pkbddj#apk" target="_blank" class="social-button android">
+          <a href="https://median.co/share/bnkokxp#apk" target="_blank" class="social-button android">
             <i class="fab fa-android"></i>
           </a>
         </div>
