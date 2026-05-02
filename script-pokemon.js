@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
+  console.log('Processing pokedexes, keys:', Object.keys(pokedexes));
   for (const [key, pokedex] of Object.entries(pokedexes)) {
+    console.log('Processing key:', key);
     let regionBreaks = getRegionBreaks(key);
     insertRegionTitles(pokedex, regionBreaks);
     pokedex.regionBreaks = regionBreaks;
@@ -35,7 +37,8 @@ function getRegionBreaks(key) {
     shadowshiny: REGION_BREAKS_SHADOWSHINY,
     purifiedshiny: REGION_BREAKS_PURIFIEDSHINY,
     perfectshadow: REGION_BREAKS_PERFECTSHADOW,
-    perfectpurified: REGION_BREAKS_PERFECTPURIFIED
+    perfectpurified: REGION_BREAKS_PERFECTPURIFIED,
+    specialbackgrounds: REGION_BREAKS_SPECIALBACKGROUNDS
   };
   return breakMap[key] || REGION_BREAKS_STANDARD;
 }
@@ -87,7 +90,8 @@ function goHome() {
       </div>
 
       <div class="collections">
-        ${Object.entries(pokedexes).map(([key, dex]) => `
+        ${Object.entries(pokedexes).map(([key, dex]) => {
+          return `
           <div class="collection-card" onclick="renderCollection('${key}')">
             <div class="card-glow"></div>
             <div class="card-icon">📘</div>
@@ -96,7 +100,7 @@ function goHome() {
               <p>${getCaughtCount(dex.data)} / ${dex.total} (${getPercentage(dex.data)}%)</p>
             </div>
           </div>
-        `).join('')}
+        `}).join('')}
         
         ${Object.entries(medals).map(([key, dex]) => `
           <div class="collection-card" onclick="renderCollection('${key}')">
@@ -756,4 +760,15 @@ const REGION_BREAKS_MEGA = [
   { name: "Sinnoh", index: 38 },
   { name: "Unova", index: 43 },
   { name: "Kalos", index: 44 },
+];
+
+const REGION_BREAKS_SPECIALBACKGROUNDS = [
+  { name: "Kanto", index: 0 },
+  { name: "Johto", index: 2 },
+  { name: "Hoenn", index: 3 },
+  { name: "Sinnoh", index: 4 },
+  { name: "Unova", index: 5 },
+  { name: "Alola", index: 7 },
+  { name: "Galar", index: 12 },
+  { name: "Paldea", index: 14 },
 ];

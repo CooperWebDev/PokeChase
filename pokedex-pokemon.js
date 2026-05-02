@@ -1,4 +1,25 @@
 const pokedexes = {
+  specialbackgrounds: {
+    title: "Special Backgrounds",
+    total: 15,
+    data: [
+      { name: "Ponyta", number: "0077", img: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/077.png", caught: false },
+      { name: "Lapras", number: "0131", img: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/131.png", caught: false },
+      { name: "Elekid", number: "0239", img: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/239.png", caught: false },
+      { name: "Ralts", number: "0280", img: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/280.png", caught: false },
+      { name: "Regigigas", number: "0486", img: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/486.png", caught: false },
+      { name: "Reshiram", number: "0643", img: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/643.png", caught: false },
+      { name: "Zekrom", number: "0644", img: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/644.png", caught: false },
+      { name: "Litten", number: "0725", img: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/725.png", caught: false },
+      { name: "Jangmo-o", number: "0782", img: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/782.png", caught: false },
+      { name: "Solgaleo", number: "0791", img: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/791.png", caught: false },
+      { name: "Lunala", number: "0792", img: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/792.png", caught: false },
+      { name: "Necrozma", number: "0800", img: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/800.png", caught: false },
+      { name: "Zacian", number: "0888", img: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/888.png", caught: false },
+      { name: "Zamazenta", number: "0889", img: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/889.png", caught: false },
+      { name: "Fuecoco", number: "0909", img: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/909.png", caught: false },
+    ]
+  },
   pokedex: {
     title: "Normal Pokedex",
     total: 907,
@@ -9459,3 +9480,6 @@ const cardSets = {
     ]
   },
 };
+
+console.log('Pokedexes loaded, keys:', Object.keys(pokedexes));
+console.log('Specialbackgrounds in pokedexes:', 'specialbackgrounds' in pokedexes);
