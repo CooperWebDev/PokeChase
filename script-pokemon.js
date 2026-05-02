@@ -240,8 +240,11 @@ function renderCollection(key, filter = "all", type = "pogo") {
         const favoriteFunction = type === 'tcg' ? 'toggleTCGFavorite' : 
                                 type === 'cards' ? 'toggleCardFavorite' : 'toggleFavorite';
         
+        const backgroundStyle = key === 'specialbackgrounds' && item.background ? 
+          `background: linear-gradient(rgba(255,255,255,${1 - (item.backgroundOpacity || 0.3)}), rgba(255,255,255,${1 - (item.backgroundOpacity || 0.3)})), url('${item.background}'); background-size: cover; background-position: center;` : '';
+        
         return `
-          <div class="item-card ${item.caught ? 'caught' : ''}" onclick="${toggleFunction}('${key}', '${type === 'tcg' || type === 'cards' ? i : identifier}', this)">
+          <div class="item-card ${item.caught ? 'caught' : ''}" style="${backgroundStyle}" data-pokemon-id="${identifier}" onclick="${toggleFunction}('${key}', '${type === 'tcg' || type === 'cards' ? i : identifier}', this)">
             <img src="${item.img}" alt="${item.name}" loading="lazy" />
             <div class="item-name">${item.name}</div>
             <div class="item-number">${item.number || ''}</div>
@@ -330,8 +333,11 @@ function updateFilteredItems(key, type = "pogo") {
     const favoriteFunction = type === 'tcg' ? 'toggleTCGFavorite' : 
                             type === 'cards' ? 'toggleCardFavorite' : 'toggleFavorite';
 
+    const backgroundStyle = key === 'specialbackgrounds' && item.background ? 
+      `background: linear-gradient(rgba(255,255,255,${1 - (item.backgroundOpacity || 0.3)}), rgba(255,255,255,${1 - (item.backgroundOpacity || 0.3)})), url('${item.background}'); background-size: cover; background-position: center;` : '';
+
     return `
-      <div class="item-card ${item.caught ? 'caught' : ''}" onclick="${toggleFunction}('${key}', '${type === 'tcg' || type === 'cards' ? i : identifier}', this)">
+      <div class="item-card ${item.caught ? 'caught' : ''}" style="${backgroundStyle}" onclick="${toggleFunction}('${key}', '${type === 'tcg' || type === 'cards' ? i : identifier}', this)">
         <img src="${item.img}" alt="${item.name}" loading="lazy" />
         <div class="item-name">${item.name}</div>
         <div class="item-number">${item.number || ''}</div>
