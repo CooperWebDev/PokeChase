@@ -22,7 +22,7 @@ const pokedexes = {
   },
   pokedex: {
     title: "Normal Pokedex",
-    total: 907,
+    total: 908,
     data: [
       { name: "Bulbasaur", number: "0001", img: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/001.png", caught: false },
       { name: "Ivysaur", number: "0002", img: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/002.png", caught: false },
