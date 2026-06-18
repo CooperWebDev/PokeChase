@@ -627,10 +627,10 @@ const REGION_BREAKS_STANDARD = [
   { name: "Unova", index: 490 },
   { name: "Kalos", index: 646 },
   { name: "Alola", index: 714 },
-  { name: "Galar", index: 794 },
-  { name: "Hisui", index: 847 },
-  { name: "Paldea", index: 854 },
-  { name: "Unidentified", index: 904 },
+  { name: "Galar", index: 796 },
+  { name: "Hisui", index: 849 },
+  { name: "Paldea", index: 856 },
+  { name: "Unidentified", index: 906 },
 ];
 
 const REGION_BREAKS_SHINY = [
