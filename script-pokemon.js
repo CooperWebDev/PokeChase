@@ -628,7 +628,7 @@ const REGION_BREAKS_STANDARD = [
   { name: "Kalos", index: 646 },
   { name: "Alola", index: 715 },
   { name: "Galar", index: 794 },
-  { name: "Hisui", index: 849 },
+  { name: "Hisui", index: 848 },
   { name: "Paldea", index: 856 },
   { name: "Unidentified", index: 906 },
 ];
